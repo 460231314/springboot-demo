@@ -23,7 +23,7 @@ public class DeptServiceImpl implements DeptService {
     @Override
     public List<DeptVO> listAll() {
         List<DeptVO> resultList = new ArrayList<>();
-        List<Dept> list = deptMapper.listAll();
+        List<Dept> list = deptMapper.listAllDept();
         list.forEach(dept -> {
             DeptVO vo = new DeptVO();
             BeanUtils.copyProperties(dept,vo);
