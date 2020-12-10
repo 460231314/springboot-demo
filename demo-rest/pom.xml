@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>demo-rest</artifactId>
-    <version>${parent.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
@@ -44,22 +44,43 @@
             <artifactId>junit-jupiter-api</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
     </dependencies>
 
     <profiles>
         <profile>
-            <id>remote</id>
+            <id>local</id>
             <properties>
-                <package.environment>remote</package.environment>
+                <package.environment>local</package.environment>
             </properties>
         </profile>
         <profile>
-            <id>local</id>
+            <id>sit</id>
+            <properties>
+                <package.environment>sit</package.environment>
+            </properties>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <properties>
+                <package.environment>uat</package.environment>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <package.environment>local</package.environment>
+                <package.environment>prod</package.environment>
             </properties>
         </profile>
     </profiles>
@@ -67,7 +88,7 @@
     <build>
         <finalName>demo-rest</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
-        <outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>
+        <outputDirectory>target/classes</outputDirectory>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
