@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author yujie
  */
-@MapperScan("com.example.springboot.demo.mapper")
 @SpringBootApplication
 public class SpringbootDemoApplication {
 
