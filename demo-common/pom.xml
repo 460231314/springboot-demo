@@ -11,5 +11,11 @@
     <artifactId>demo-common</artifactId>
     <version>${project.parent.version}</version>
 
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    </dependencies>
 
 </project>

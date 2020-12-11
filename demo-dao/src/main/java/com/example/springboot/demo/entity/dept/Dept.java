@@ -1,4 +1,4 @@
-package com.example.springboot.demo.mapper.entity.auto;
+package com.example.springboot.demo.entity.dept;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 /**
@@ -7,7 +7,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author yuanrp
- * @since 2020-12-10
+ * @since 2020-12-11
  */
 @TableName("dept")
 public class Dept implements Serializable {

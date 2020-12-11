@@ -1,5 +1,3 @@
-package com.example.springboot.demo;
-
 import com.github.davidfantasy.mybatisplus.generatorui.GeneratorConfig;
 import com.github.davidfantasy.mybatisplus.generatorui.MybatisPlusToolsApplication;
 import com.github.davidfantasy.mybatisplus.generatorui.mbp.NameConverter;
@@ -12,7 +10,7 @@ public class GeberatorUIServer {
                 .password("1234567890-")
                 .driverClassName("com.mysql.cj.jdbc.Driver")
                 //数据库schema，POSTGRE_SQL,ORACLE,DB2类型的数据库需要指定
-                .schemaName("myBusiness")
+                .schemaName("test")
                 //如果需要修改各类生成文件的默认命名规则，可自定义一个NameConverter实例，覆盖相应的名称转换方法：
                 .nameConverter(new NameConverter() {
                     /**
@@ -30,7 +28,7 @@ public class GeberatorUIServer {
                         return this.entityNameConvert(tableName) + "Controller";
                     }
                 })
-                .basePackage("com.example.springboot.demo.mapper")
+                .basePackage("com.example.springboot.demo")
                 .port(8068)
                 .build();
         MybatisPlusToolsApplication.run(config);

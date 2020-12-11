@@ -1,12 +1,12 @@
-package com.example.springboot.demo.mapper.controller.auto;
+package com.example.springboot.demo.controller.dept;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import com.example.springboot.demo.mapper.service.auto.DeptService;
-import com.example.springboot.demo.mapper.entity.auto.Dept;
+import com.example.springboot.demo.service.dept.DeptService;
+import com.example.springboot.demo.entity.dept.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * </p>
  *
  * @author yuanrp
- * @since 2020-12-10
+ * @since 2020-12-11
  */
 @Controller
 @RequestMapping("/dept")

@@ -1,6 +1,6 @@
-package com.example.springboot.demo.mapper.service.auto;
+package com.example.springboot.demo.service.dept;
 
-import com.example.springboot.demo.mapper.entity.auto.Dept;
+import com.example.springboot.demo.entity.dept.Dept;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author yuanrp
- * @since 2020-12-10
+ * @since 2020-12-11
  */
 public interface DeptService extends IService<Dept> {
 

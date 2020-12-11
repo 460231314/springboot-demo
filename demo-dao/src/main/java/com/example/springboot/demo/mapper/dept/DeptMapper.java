@@ -1,6 +1,6 @@
-package com.example.springboot.demo.mapper.mapper.auto;
+package com.example.springboot.demo.mapper.dept;
 
-import com.example.springboot.demo.mapper.entity.auto.Dept;
+import com.example.springboot.demo.entity.dept.Dept;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author yuanrp
- * @since 2020-12-10
+ * @since 2020-12-11
  */
 public interface DeptMapper extends BaseMapper<Dept> {
 
